@@ -1,0 +1,26 @@
+{
+  "name": "atividade-3",
+  "version": "1.0.0",
+  "description": "projeto para validacao do lado do servidor",
+  "homepage": "https://github.com/williamadalaqua/atividade-3#readme",
+  "bugs": {
+    "url": "https://github.com/williamadalaqua/atividade-3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamadalaqua/atividade-3.git"
+  },
+  "license": "ISC",
+  "author": "william",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0"
+  }
+}
