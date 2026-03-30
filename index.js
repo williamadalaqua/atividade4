@@ -132,7 +132,8 @@ app.post("/login", (requisicao, resposta) => {
     if (email === "admin@email.com" && senha === "123") {
 
         requisicao.session.logado = true;
-        resposta.cookie("UltimoAcesso", new Date().toLocaleString(), { maxAge: 1000 * 60 * 60 * 24 * 30});
+        const UltimoAcesso = new Date();
+        resposta.cookie("UltimoAcesso", UltimoAcesso.toLocaleString(), { maxAge: 1000 * 60 * 60 * 24 * 30});
         resposta.redirect("/");
     } else {
 
